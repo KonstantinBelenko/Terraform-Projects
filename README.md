@@ -3,7 +3,7 @@ This repo shows a few examples of Infrastructure-As-Code with terraform with ful
 
 # Before looking at the examples
 * [What the hell is Terraform](https://github.com/KonstantinBelenko/Terraform-Projects/blob/main/documentation/what_is_terraform.md)
-* Terraform dictionary
+* [Terraform dictionary](https://github.com/KonstantinBelenko/Terraform-Projects/blob/main/documentation/terraform_dictionary.md)
 * Terraform Logic & Types
 * Terraform Modules & Providers
 
