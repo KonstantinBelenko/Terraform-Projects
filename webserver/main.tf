@@ -1,14 +1,24 @@
 provider "aws" {
   region     = "eu-central-1"
-  access_key = "AKIAQUP2ZGO77AHZEJFO"
-  secret_key = "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"
+  access_key = var.access_key
+  secret_key = var.secret_key
 }
 
 ### VARIABLES ###
 variable "prod-subnet-prefix" {
   description = "Cidr block for prod subnet"
-  default     = "10.0.1.0/24"
+  default     = ["10.0.1.0/24"]
+  type        = list
+}
+variable "access_key" {
+  description = "AWS access key"
   type        = string
+  sensitive   = true
+}
+variable "secret_key" {
+  description = "AWS secret key"
+  type        = string
+  sensitive   = true
 }
 #################
 
