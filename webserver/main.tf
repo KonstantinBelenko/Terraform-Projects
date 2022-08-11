@@ -1,5 +1,22 @@
+# Get the latest aws ami for ubuntu
+data "aws_ami" "ubuntu" {
+    most_recent = true
+
+    filter {
+        name   = "name"
+        values = ["ubuntu/images/hvm-ssd/ubuntu-xenial-16.04-amd64-server-*"]
+    }
+
+    filter {
+        name   = "virtualization-type"
+        values = ["hvm"]
+    }
+
+    owners = ["099720109477"] # Canonical
+}
+
 resource "aws_instance" "ec2-webserver-1" {
-  ami               = "ami-065deacbcaac64cf2"
+  ami               = data.aws_ami.ubuntu.id
   instance_type     = "t2.micro"
   availability_zone = "eu-central-1a"
   key_name          = var.ec2_access_key_name
