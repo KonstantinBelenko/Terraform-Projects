@@ -14,8 +14,11 @@ We have a few files in here, let's dissect them in order.
     * Network interface for ec2 instance
     * Elastic IP given to ec2 instance<br>
 <br>
+
 3. `providers.tf` - The prime purpose of this file is to connect Terraform to AWS by creating a provider block and supplying the region name and authorization keys.
+
 4. `vars.tf` - This file contains declarations of all used variables.
+
 5. `outputs.tf` - File that contains output values, specifically the public ip of initialized instance.
 
 6. `terraform.tfvars` - This file may be used to further configurate this terraform script up to your specific situation.
