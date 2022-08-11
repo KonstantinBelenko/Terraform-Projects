@@ -17,3 +17,14 @@ variable "provider_region" {
   type        = string
   default     = "eu-central-1"
 }
+
+variable "server_text" {
+  description = "The text that will be displayed by the web server"
+  type        = string
+  default     = "Hello World!"
+}
+
+variable "ec2_access_key_name" {
+  description = "The name of the access key for ec2 instance"
+  type        = string
+}
