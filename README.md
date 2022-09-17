@@ -6,4 +6,4 @@ This repo shows a few examples of Infrastructure-As-Code with terraform with ful
 * [Terraform dictionary](https://github.com/KonstantinBelenko/Terraform-Projects/blob/main/documentation/terraform_dictionary.md)
 
 # Projects
-1. [Webserver inside a private virtual network](https://github.com/KonstantinBelenko/Terraform-Projects/tree/main/webserver)
+1. [Webserver inside a private virtual network / AWS](https://github.com/KonstantinBelenko/Terraform-Projects/tree/main/webserver)
